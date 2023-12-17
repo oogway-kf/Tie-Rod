@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginForCAD.View", "PluginForCAD.View\PluginForCAD.View.csproj", "{DF4D69D5-B2F3-4331-BE52-4E2BB239F072}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A7075599-844D-4F62-9A13-9ADAD9A9E19D} = {A7075599-844D-4F62-9A13-9ADAD9A9E19D}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginForCAD.Model", "PluginForCAD.Model\PluginForCAD.Model.csproj", "{A7075599-844D-4F62-9A13-9ADAD9A9E19D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginForCAD.Wrapper", "PluginForCAD.KompasWrapper\KompasWrapper\PluginForCAD.Wrapper.csproj", "{01E3CD07-45C1-4895-9141-5A5D46ABD5CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF4D69D5-B2F3-4331-BE52-4E2BB239F072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4D69D5-B2F3-4331-BE52-4E2BB239F072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4D69D5-B2F3-4331-BE52-4E2BB239F072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4D69D5-B2F3-4331-BE52-4E2BB239F072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7075599-844D-4F62-9A13-9ADAD9A9E19D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7075599-844D-4F62-9A13-9ADAD9A9E19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7075599-844D-4F62-9A13-9ADAD9A9E19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7075599-844D-4F62-9A13-9ADAD9A9E19D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01E3CD07-45C1-4895-9141-5A5D46ABD5CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01E3CD07-45C1-4895-9141-5A5D46ABD5CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01E3CD07-45C1-4895-9141-5A5D46ABD5CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01E3CD07-45C1-4895-9141-5A5D46ABD5CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {651CCD66-BBDF-4191-82C7-ABD32D598896}
+	EndGlobalSection
+EndGlobal
