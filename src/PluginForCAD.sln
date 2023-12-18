@@ -12,6 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginForCAD.Model", "Plugi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginForCAD.Wrapper", "PluginForCAD.KompasWrapper\KompasWrapper\PluginForCAD.Wrapper.csproj", "{01E3CD07-45C1-4895-9141-5A5D46ABD5CE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginForCAD.UnitTests", "PluginForCAD.UnitTests\PluginForCAD.UnitTests.csproj", "{6DED63A6-FFD1-4BF0-B127-D4986B65215F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{01E3CD07-45C1-4895-9141-5A5D46ABD5CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01E3CD07-45C1-4895-9141-5A5D46ABD5CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01E3CD07-45C1-4895-9141-5A5D46ABD5CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DED63A6-FFD1-4BF0-B127-D4986B65215F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DED63A6-FFD1-4BF0-B127-D4986B65215F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DED63A6-FFD1-4BF0-B127-D4986B65215F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DED63A6-FFD1-4BF0-B127-D4986B65215F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

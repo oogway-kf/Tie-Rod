@@ -99,7 +99,6 @@ namespace PluginForCAD.View
         /// <param name="bigPartDiameter"></param>
         /// <param name="smallPartDiameter"></param>
         /// <param name="ChamferLength"></param>
-        /// <param name="chamferSmallPartLength"></param>
         private void SetParameters(double bigPartLength, double smallPartLength,
             double bigPartDiameter, double smallPartDiameter,
             double ChamferLength)
