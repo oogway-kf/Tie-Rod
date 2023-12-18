@@ -3,6 +3,7 @@ using PluginForCAD.Wrapper;
 
 namespace PluginForCAD.View
 {
+    //TODO: XML
     public partial class MainForm : Form
     {
         /// <summary>

@@ -4,6 +4,7 @@ using PluginForCAD.Model;
 
 namespace PluginForCAD.Wrapper
 {
+    //TODO: XML
     public class KompasSketch
     {
         /// <summary>

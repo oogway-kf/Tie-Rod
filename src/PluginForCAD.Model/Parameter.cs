@@ -1,4 +1,6 @@
 ﻿namespace PluginForCAD.Model;
+
+//TODO: XML
 public class Parameter
 {
     /// <summary>

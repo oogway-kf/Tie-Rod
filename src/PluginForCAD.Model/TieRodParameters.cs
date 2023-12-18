@@ -1,6 +1,7 @@
 ﻿
 namespace PluginForCAD.Model
 {
+    //TODO: XML
     public class TieRodParameters
     {
         /// <summary>

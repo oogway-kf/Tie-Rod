@@ -4,6 +4,7 @@ namespace PluginForCAD.UnitTests
 {
     public class ParameterTests
     {
+        //TODO: зачем?
         [SetUp]
         public void Setup()
         {
@@ -29,7 +30,7 @@ namespace PluginForCAD.UnitTests
             const double minValue = 10;
             const double maxValue = 15;
             const double value = 5;
-
+            //TODO: RSDN
             var actual = Assert.Throws<ArgumentOutOfRangeException>(() => new Parameter(value, minValue, maxValue));
             var expected = $"Значение должно быть между {minValue} и {maxValue}";
 
@@ -43,6 +44,7 @@ namespace PluginForCAD.UnitTests
             const double maxValue = 15;
             const double value = 20;
 
+            //TODO: RSDN
             var actual = Assert.Throws<ArgumentOutOfRangeException>(() => new Parameter(value, minValue, maxValue));
             var expected = $"Значение должно быть между {minValue} и {maxValue}";
 
