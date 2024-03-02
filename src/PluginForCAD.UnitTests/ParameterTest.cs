@@ -4,8 +4,6 @@ namespace PluginForCAD.UnitTests
 {
     public class ParameterTests
     {
-        //TODO: зачем?
-        [SetUp]
         public void Setup()
         {
             TestValueGet_CorrectValue();
@@ -24,28 +22,31 @@ namespace PluginForCAD.UnitTests
             Assert.That(actual, Is.EqualTo(expected));
         }
 
-        [Test(Description = "Негативный тест геттера. Значение меньше допустимого.")]
+        [Test(Description = "Негативный тест геттера. " +
+            "Значение меньше допустимого.")]
         public void TestValueMinValueGet_IncorrectValue()
         {
             const double minValue = 10;
             const double maxValue = 15;
             const double value = 5;
-            //TODO: RSDN
-            var actual = Assert.Throws<ArgumentOutOfRangeException>(() => new Parameter(value, minValue, maxValue));
+
+            var actual = Assert.Throws<ArgumentOutOfRangeException>(() =>
+                new Parameter(value, minValue, maxValue));
             var expected = $"Значение должно быть между {minValue} и {maxValue}";
 
             Assert.That(actual?.ParamName, Is.EqualTo(expected));
         }
 
-        [Test(Description = "Негативный тест геттера. Значение больше допустимого.")]
+        [Test(Description = "Негативный тест геттера. " +
+            "Значение больше допустимого.")]
         public void TestValueMaxValueGet_IncorrectValue()
         {
             const double minValue = 10;
             const double maxValue = 15;
             const double value = 20;
 
-            //TODO: RSDN
-            var actual = Assert.Throws<ArgumentOutOfRangeException>(() => new Parameter(value, minValue, maxValue));
+            var actual = Assert.Throws<ArgumentOutOfRangeException>(() => 
+                new Parameter(value, minValue, maxValue));
             var expected = $"Значение должно быть между {minValue} и {maxValue}";
 
             Assert.That(actual?.ParamName, Is.EqualTo(expected));

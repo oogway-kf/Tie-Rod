@@ -5,7 +5,9 @@ using System.Runtime.InteropServices;
 
 namespace PluginForCAD.Wrapper
 {
-    //TODO: XML
+    /// <summary>
+    /// Класс передачи свойств рейкии команд в Компас 3D.
+    /// </summary>
     internal class KompasWrapper
     {
         /// <summary>
@@ -103,9 +105,9 @@ namespace PluginForCAD.Wrapper
         /// <param name="kompasSketch">Скетч.</param>
         public void ExtrudeRotation360(KompasSketch kompasSketch)
         {
-            //TODO: RSDN
             ksEntity bossRotated = (ksEntity)_part.NewEntity((short)Obj3dType.o3d_bossRotated);
-            ksBossRotatedDefinition bossRotatedDefinition = (ksBossRotatedDefinition)bossRotated.GetDefinition();
+            ksBossRotatedDefinition bossRotatedDefinition = 
+                (ksBossRotatedDefinition)bossRotated.GetDefinition();
             bossRotatedDefinition.directionType = (short)Direction_Type.dtNormal;
             bossRotatedDefinition.SetSketch(kompasSketch.Sketch);
             bossRotatedDefinition.SetSideParam(true, 360);

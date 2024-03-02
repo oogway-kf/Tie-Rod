@@ -1,7 +1,9 @@
 ﻿
 namespace PluginForCAD.Model
 {
-    //TODO: XML
+    /// <summary>
+    /// Класс параметров рулевой рейки.
+    /// </summary>
     public class TieRodParameters
     {
         /// <summary>

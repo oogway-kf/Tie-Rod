@@ -1,7 +1,9 @@
 ﻿
 namespace PluginForCAD.Model
 {
-    //TODO: XML
+    /// <summary>
+    /// Перечисление мзменяемых параметров рулевой рейки.
+    /// </summary>
     public enum ParametersType
     {
         /// <summary>

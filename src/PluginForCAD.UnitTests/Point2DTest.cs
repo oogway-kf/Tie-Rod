@@ -4,8 +4,6 @@ namespace PluginForCAD.UnitTests;
 
 public class Point2DTest
 {
-    //TODO: зачем?
-    [SetUp]
     public void Setup()
     {
         TestXGet_CorrectValue();

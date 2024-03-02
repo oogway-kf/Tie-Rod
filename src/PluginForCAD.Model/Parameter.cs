@@ -1,6 +1,8 @@
 ﻿namespace PluginForCAD.Model;
 
-//TODO: XML
+/// <summary>
+/// Класс изменения параметра рулевой рейки.
+/// </summary>
 public class Parameter
 {
     /// <summary>

@@ -5,12 +5,10 @@ namespace PluginForCAD.UnitTests
     public class TieRodParametersTests
     {
         /// <summary>
-        /// Параметры штока.
+        /// Параметры рулевой тяги.
         /// </summary>
         private TieRodParameters _parameters = new TieRodParameters();
 
-        //TODO: зачем?
-        [SetUp]
         public void Setup()
         {
             TestSetPermissibleParameter_CorrectValues();
@@ -20,7 +18,6 @@ namespace PluginForCAD.UnitTests
         [Test(Description ="Позитивный тест")]
         public void TestSetPermissibleParameter_CorrectValues()
         {
-            //TODO: RSDN
             var expectedSmallPartLength = _parameters.GetParameterValue(ParametersType.SmallPartLength);
             var expectedSmallPartDiameter = _parameters.GetParameterValue(ParametersType.SmallPartDiameter);
 
@@ -50,11 +47,12 @@ namespace PluginForCAD.UnitTests
             var actualdSmallPartDiameterException = Assert.Throws<ArgumentOutOfRangeException>(() =>
                 _parameters.SetParameterValue(ParametersType.SmallPartDiameter, 5));
 
-            //TODO: RSDN
             Assert.Multiple(() =>
             {
-                Assert.That(actualSmallPartLengthException?.ParamName, Is.EqualTo(expectedSmallPartLengthException));
-                Assert.That(actualdSmallPartDiameterException?.ParamName, Is.EqualTo(expectedSmallPartDiameterException));
+                Assert.That(actualSmallPartLengthException?.ParamName, 
+                    Is.EqualTo(expectedSmallPartLengthException));
+                Assert.That(actualdSmallPartDiameterException?.ParamName,
+                    Is.EqualTo(expectedSmallPartDiameterException));
             });
         }
 

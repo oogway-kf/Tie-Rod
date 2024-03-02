@@ -5,7 +5,7 @@ using PluginForCAD.Wrapper;
 namespace PluginForCAD.Wrapper
 {
     /// <summary>
-    /// Класс построения рейки.
+    /// Класс построения рулевой тяги.
     /// </summary>
     public class TieRodBuilder
     {
@@ -15,9 +15,9 @@ namespace PluginForCAD.Wrapper
         private KompasWrapper _wrapper = new KompasWrapper();
 
         /// <summary>
-        /// Создание рейки.
+        /// Создание рулевой тяги.
         /// </summary>
-        /// <param name="TieRodParameters">Параметры рейки.</param>
+        /// <param name="TieRodParameters">Параметры рулевой тяги.</param>
         public void BuildTieRod(TieRodParameters TieRodParameters)
         {
             _wrapper.StartKompas();
@@ -40,7 +40,7 @@ namespace PluginForCAD.Wrapper
         }
 
         /// <summary>
-        /// Построение скетча с формой рейки.
+        /// Построение скетча с формой рулевой тяги.
         /// </summary>
         /// <param name="bigPartRadius">Радиус большей части.</param>
         /// <param name="smallPartRadius">Радиус малой части.</param>
